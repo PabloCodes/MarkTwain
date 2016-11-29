@@ -1,4 +1,4 @@
-var app = angular.module('personalApp', ['ngRoute']);
+var app = angular.module('twainApp', ['ngRoute']);
 
 app.config(function($routeProvider) {
 	$routeProvider.when('/', {

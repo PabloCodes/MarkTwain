@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<title>Illustrating Tom and Huck</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
-<body>
-	<div class="to-front">
+<body ng-app="twainApp">
+	<div class="container-fluid to-top">
  		<div class="row">
-	 		<div class="col-sm-5">
-	 			<div class="navbar">Illustrating Tom Sawyer and Huckleberry Finn</div>
+	 		<div class="col-sm-4">
+	 			<div class="navbar">Illustrating Tom and Huck</div>
 	 		</div>
-	 		<div class="col-sm-2 col-sm-offset-3">
+	 		<div class="col-sm-2 col-sm-offset-4">
 	 			<div class="navbar"><a ng-href="#/tom">Tom</a></div>
 	 		</div>
 	 		<div class="col-sm-2">
@@ -30,16 +33,19 @@
  		</div>
 	 </div>
 	 <div class="container-fluid" ng-view></div>
-	 <div class="to-front">
+	 <div class="container-fluid to-bottom">
 	 	<div class="row">
-	 		<div class="col-sm-6">
+	 		<div class="col-sm-2">
+	 			<div>Pablo Cazzulino ENAM 4500 Final Project</div>
+	 		</div>
+	 		<div class="col-sm-2 col-sm-offset-5">
 	 			<div>
 	 				<a ng-href="#/references">Sources</a>
 	 			</div>
 	 		</div>
-	 		<div class="col-sm-6">
+	 		<div class="col-sm-2">
 	 			<div>
-	 				<a ng-href="#/about">About this project</a>
+	 				<a ng-href="#/">About this project</a>
 	 			</div>
 	 		</div>
 	 	</div>
