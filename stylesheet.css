@@ -48,6 +48,12 @@
 	float: left;
 	width: 32.99%;
 }
+.l-float:hover {
+	transform: translate(-1%,-1%);
+	transition: transform .4s;
+	box-shadow: 5px 5px 5px rgb(200,200,200);
+
+}
 .l-float img {
 	width: 100%;
 }
@@ -76,9 +82,10 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 5;
+	box-shadow: 8px 8px 5px #888888;
 }
 .lightbox-content img {
-	width: auto;
+	width: 100%;
 }
 .lightbox-content .blurb {
 	background: white;
