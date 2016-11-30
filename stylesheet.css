@@ -40,7 +40,7 @@
 	left: 0;
 	right: 0;
 	width: 100%;
-	background: rgb(127,127,127);
+	background: rgb(0,127,102);
 	text-align: center;
 }
 .l-float {
@@ -60,6 +60,29 @@
 	right: 0;
 	bottom: 0;
 	text-align: center;
+}
+.lightbox-bg {
+	background: rgba(252,252,252,0.8);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.lightbox-content {
+	position: fixed;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 5;
+}
+.lightbox-content img {
+	width: auto;
+}
+.lightbox-content .blurb {
+	background: white;
+	color: black;
 }
 
 
