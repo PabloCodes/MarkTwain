@@ -5,7 +5,7 @@
 	bottom: 45px;
 	z-index: 2;
 	width: 100%;
-	background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("marktwainface.png");
+	background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("pictures/marktwainface.png");
 	background-size: cover;
 	color: white;
 }
@@ -47,14 +47,34 @@
 	padding: 0 6px;
 	float: left;
 	width: 32.99%;
+	display: inline-block;
 }
 .l-float:hover {
+	box-shadow: 5px 5px 5px rgb(200,200,200);
+}
+.l-float:active {
+	transform: translate(0%,0%);
+	box-shadow: none;
+}
+.l-float img {
+	width: 100%;
+}
+.r-float {
+	padding: 0 6px;
+	float: right;
+	width: 32.99%;
+	display: inline;
+}
+.r-float:hover {
 	transform: translate(-1%,-1%);
 	transition: transform .4s;
 	box-shadow: 5px 5px 5px rgb(200,200,200);
-
 }
-.l-float img {
+.r-float:active {
+	transform: translate(0%,0%);
+	box-shadow: none;
+}
+.r-float img {
 	width: 100%;
 }
 .background {
@@ -64,7 +84,6 @@
 	top: 70px;
 	left: 0;
 	right: 0;
-	bottom: 0;
 	text-align: center;
 }
 .lightbox-bg {
@@ -83,9 +102,11 @@
 	transform: translate(-50%,-50%);
 	z-index: 5;
 	box-shadow: 8px 8px 5px #888888;
+	width: 70%;
 }
 .lightbox-content img {
-	width: 100%;
+	width:50%;
+	height: 100%;
 }
 .lightbox-content .blurb {
 	background: white;
@@ -94,7 +115,12 @@
 h1 {
 	text-align: center;
 }
-
+.t-up {
+	transform: translateY(-40%);
+}
+.t-up2 {
+	transform: translateY(-70%);
+}
 
 
 
